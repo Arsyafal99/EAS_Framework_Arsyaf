@@ -38,28 +38,28 @@ export default function TaskForm() {
       onSubmit={handleSubmit}
       className="bg-white rounded-xl shadow p-6 mt-8"
     >
-      <h2 className="text-2xl font-bold mb-5">
+      <h2 className="text-2xl font-bold text-gray-900 mb-5">
         Tambah Task
       </h2>
 
       <input
         type="text"
         placeholder="Judul Task"
-        className="border p-3 rounded w-full mb-4"
+        className="w-full border border-gray-300 rounded-lg p-3 mb-4 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
 
       <textarea
         placeholder="Deskripsi"
-        className="border p-3 rounded w-full mb-4"
         rows={4}
+        className="w-full border border-gray-300 rounded-lg p-3 mb-4 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
 
       <select
-        className="border p-3 rounded w-full mb-4"
+        className="w-full border border-gray-300 rounded-lg p-3 mb-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
         value={status}
         onChange={(e) => setStatus(e.target.value)}
       >
@@ -69,7 +69,7 @@ export default function TaskForm() {
 
       <button
         type="submit"
-        className="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg"
+        className="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg transition"
       >
         Simpan
       </button>
