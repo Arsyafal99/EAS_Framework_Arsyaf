@@ -48,18 +48,20 @@ export default function About() {
             Video Presentasi
           </h2>
 
-          <div className="aspect-video rounded-lg overflow-hidden shadow-md bg-gray-200">
+          <div className="aspect-video rounded-lg overflow-hidden shadow-md">
             <iframe
               className="w-full h-full"
-              src=""
+              src="https://www.youtube.com/embed/Uis88ZgeXag"
               title="Video Presentasi UAS"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </div>
 
           <p className="text-sm text-gray-500 mt-3">
-            Video presentasi akan ditampilkan di sini setelah diunggah ke
-            YouTube.
+            Video presentasi aplikasi Student Task Manager sebagai bagian dari
+            tugas UAS Mata Kuliah Pemrograman Berbasis Framework.
           </p>
         </div>
 
